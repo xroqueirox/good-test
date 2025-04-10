@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    cursor: default; /* Default cursor */
 }
 
 canvas {
@@ -16,6 +17,10 @@ canvas {
     top: 0;
     left: 0;
     z-index: -2; /* Behind the ropeContainer */
+}
+
+canvas.grabbing {
+    cursor: grabbing; /* or any other "grabbing" cursor you prefer */
 }
 
 #ropeContainer {
@@ -41,6 +46,7 @@ canvas {
     position: relative;
     z-index: 1;
     display: none; /* Initially hide the login container */
+    opacity: 0; /* Initially hidden */
 }
 
 .login-container h1 {
@@ -91,6 +97,7 @@ canvas {
 #login-message {
     margin-top: 10px;
     color: red;
+    opacity: 0; /* Initially hidden */
 }
 
 .moving-icon {

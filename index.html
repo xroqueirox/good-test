@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rope Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for the moving icons */
+        .moving-icon {
+            position: absolute;
+            font-size: 2em;
+            color: white;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="ropeCanvas"></canvas>
+
+    <div id="ropeContainer"></div>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+        <div id="login-message"></div>
+    </div>
+
+    <div id="messageContainer">
+        <p>ok</p>
+    </div>
+
+    <div id="sliderContainer">
+        <div id="slider"></div>
+    </div>
+
+    <i class="moving-icon" style="left: 10%; top: 20%;" data-dx="1" data-dy="1">😄</i>
+    <i class="moving-icon" style="left: 30%; top: 30%;" data-dx="-1" data-dy="1">😂</i>
+    <i class="moving-icon" style="left: 50%; top: 40%;" data-dx="1" data-dy="-1">😍</i>
+    <i class="moving-icon" style="left: 70%; top: 50%;" data-dx="-1" data-dy="-1">😎</i>
+    <i class="moving-icon" style="left: 20%; top: 60%;" data-dx="1" data-dy="1">🥳</i>
+    <i class="moving-icon" style="left: 40%; top: 70%;" data-dx="-1" data-dy="1">🥶</i>
+    <i class="moving-icon" style="left: 60%; top: 80%;" data-dx="1" data-dy="-1">🤯</i>
+
+    <script src="script.js"></script>
+</body>
+</html>
